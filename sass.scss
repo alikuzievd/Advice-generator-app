@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1440px;
+    height: 810px;
+    background: #202733;
+    display: flex;
+}
+.block {
+    margin-top: 223px;
+    margin-left: 450px;
+    width: 540px;
+    height: 332px;
+    background: #313A48;
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+    border-radius: 15px;
+}
+.icon {
+    position: absolute;
+    z-index: 10;
+    width: 64px;
+    height: 64px;
+    top: 523px;
+    left: 688px;
+    background: #53FFAA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 4.08571px;
+    color: #53FFAA;    
+}
+.p-2 {
+    margin-top: 24px;
+    margin-left: 48px;
+    width: 444px;
+    height: 114px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #CEE3E9;    
+}
+.desktop {
+    margin-top: 40px;
+    margin-left: 48px;
+}
+.mobile {
+    display: none;
+}
+.icon:hover {
+    box-shadow: 0px 0px 40px #53FFAA;
+}
+
+@media screen and (max-width: 376px) {
+    .desktop {
+        display: none;
+    }
+    .container {
+        width: 375px;
+        height: 667px;
+    }
+    .block {
+        margin-top: 120px;
+        margin-left: 16px;
+        width: 343px;
+        height: 315px;
+        border-radius: 10px;
+    }
+    .icon {
+        top: 403px;
+        left: 155px;
+    }
+    .p-1 {
+        margin-top: 40px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .p-2 {
+        margin-left: 24px;
+        width: 295px;
+        height: 132px;
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .mobile {
+        display: block;
+        margin-top: 24px;
+        margin-left: 24px;
+    }        
+}
